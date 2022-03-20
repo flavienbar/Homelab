@@ -56,12 +56,12 @@ ssh pi01rouge '/opt/hadoop/bin/yarn node -list'
 echo Yarn ready
 
 echo Hive
-echo hive metastore pi08
-ssh pi08 '/opt/hive/bin/hive --service metastore > /dev/null 2>&1 &'
+echo hive metastore pi08noir
+ssh pi08noir '/opt/hive/bin/hive --service metastore > /dev/null 2>&1 &'
 sleep 10
 echo hive metastore is on
-echo hive hiveserver2 pi07
-ssh pi07 '/opt/hive/bin/hive --service hiveserver2 > /dev/null 2>&1 &'
+echo hive hiveserver2 pi07violet
+ssh pi07violet '/opt/hive/bin/hive --service hiveserver2 > /dev/null 2>&1 &'
 sleep 10
 echo hive hiveserver2 is on
 echo Hive is on
